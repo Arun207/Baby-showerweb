@@ -57,7 +57,7 @@ body {
 h1 { margin: .8rem 0 0; color: var(--brown); font-family: "Brush Script MT", "Segoe Script", cursive; font-size: clamp(5rem,13vw,10rem); font-weight: 400; line-height: .8; }
 h2 { margin: .3rem 0 1.4rem; font-size: clamp(3.1rem,7vw,6.4rem); letter-spacing: .03em; line-height: .9; font-weight: 500; }
 .honoring { display: flex; align-items: center; gap: .8rem; letter-spacing: .22em; text-transform: uppercase; font-size: .75rem; }
-.honoring::before, .honoring::after { content: ""; width: 4rem; height: 1px; background: var(--taupe); }
+.honoring::before, .honoring::after { content: ""; width: 10rem; height: 1px; background: var(--taupe); }
 .names { margin: 1.1rem 0 1.4rem; color: var(--brown); font-family: "Brush Script MT", cursive; font-size: clamp(2.4rem,5vw,4.3rem); }
 .intro { max-width: 34rem; font-size: 1.08rem; line-height: 1.65; }
 
@@ -142,3 +142,4 @@ footer .script { font-family: "Brush Script MT", cursive; font-size: 2.5rem; }
   .swatch-name { top: calc(100% + .65rem); bottom: auto; }
   .swatch-name::after { top: auto; bottom: 100%; border-top-color: transparent; border-bottom-color: rgba(74,48,35,.95); }
 }
+
