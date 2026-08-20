@@ -536,3 +536,144 @@ footer .script {
 .footer-names b {
   font-weight: 400;
 }
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+.page,
+.hero,
+.details,
+.palette,
+footer {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
+}
+
+.nav {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.brand {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.hero-grid,
+.details-inner,
+.cards,
+.card,
+.photo-frame,
+.photo-frame img {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.hero-grid > * {
+  min-width: 0;
+}
+
+.photo-frame {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.intro,
+.names,
+.eyebrow,
+.honoring,
+.card p,
+.venue-link,
+.palette p,
+.footer-names {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.venue-link {
+  word-break: normal;
+}
+
+@media (max-width: 760px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    gap: 2.5rem;
+  }
+
+  .hero {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .details,
+  .palette {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .photo-frame {
+    width: min(100%, 28rem);
+    transform: rotate(1deg);
+  }
+
+  .photo-frame img {
+    aspect-ratio: 4 / 5;
+    max-height: 72svh;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .cards {
+    grid-template-columns: minmax(0, 1fr);
+    width: min(100%, 28rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .card {
+    width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .swatches {
+    width: 100%;
+    max-width: 22rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero,
+  .details,
+  .palette {
+    padding-right: .85rem;
+    padding-left: .85rem;
+  }
+
+  .photo-frame {
+    width: min(100%, 21rem);
+    padding: .4rem;
+  }
+
+  .photo-frame img {
+    max-height: 66svh;
+  }
+}
