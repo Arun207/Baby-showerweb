@@ -19,14 +19,14 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+ody {
   width: 100%;
   min-width: 0;
   max-width: 100%;
   margin: 0;
   overflow-x: hidden;
   color: var(--dark);
-  font-family: "Brush Script MT", cursive;
+  font-family: Georgia, "Times New Roman", serif;
   background:
     radial-gradient(circle at 20% 10%, rgba(255,255,255,.7), transparent 24rem),
     linear-gradient(135deg, var(--cream), #ead9c6 48%, #f9f2e9);
