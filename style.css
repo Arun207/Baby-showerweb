@@ -166,7 +166,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp( 2vw, .8rem);
+  gap: clamp(.35rem, 2vw, .8rem);
   letter-spacing: clamp(.08em, 1vw, .22em);
   text-align: center;
   text-transform: uppercase;
